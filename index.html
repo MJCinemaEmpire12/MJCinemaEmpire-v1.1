@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MJ Cinema Empire</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header class="header">
+
+<div class="logo">
+
+🎬 MJ Cinema Empire
+
+</div>
+
+<nav>
+
+<a href="#home">🏠 Home</a>
+
+<a href="#movies">🎥 Movies</a>
+
+<a href="#tvshows">📺 TV Shows</a>
+
+<a href="#trending">🔥 Trending</a>
+
+<a href="#favorites">❤️ Favorites</a>
+
+<a href="https://youtube.com/@MMCinemaClub11" target="_blank">
+
+▶ YouTube
+
+</a>
+
+</nav>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchMovie"
+placeholder="Search Movies...">
+
+</div>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero" id="home">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+Unlimited Movies & TV Shows
+
+</h1>
+
+<p>
+
+Watch Hollywood, Bollywood, South Indian, Anime,
+and Web Series in one premium place.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#movies" class="btn-red">
+
+🎬 Explore Movies
+
+</a>
+
+<a href="#admin" class="btn-dark">
+
+👑 Admin Panel
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== TRENDING ===== -->
+
+<section id="trending">
+
+<h2 class="section-title">
+
+🔥 Trending Movies
+
+</h2>
+
+<div id="movieContainer"
+class="movie-grid">
+
+<!-- Movies -->
+
+</div>
+
+</section>
+
+<!-- ===== LATEST ===== -->
+
+<section id="movies">
+
+<h2 class="section-title">
+
+🎬 Latest Movies
+
+</h2>
+
+<div class="movie-grid" id="latestMovies">
+
+</div>
+
+</section>
+
+<!-- ===== TV SHOWS ===== -->
+
+<section id="tvshows">
+
+<h2 class="section-title">
+
+📺 TV Shows
+
+</h2>
+
+<div class="movie-grid">
+
+</div>
+
+</section>
+
+<!-- ===== FAVORITES ===== -->
+
+<section id="favorites"><!-- ===========================
+     ADMIN PANEL
+=========================== -->
+
+<section id="admin" class="admin-section">
+
+<h2 class="section-title">👑 Admin Panel</h2>
+
+<div class="admin-box">
+
+<input type="text" id="movieTitle" placeholder="🎬 Movie Title">
+
+<textarea id="movieDescription" placeholder="📝 Movie Description"></textarea>
+
+<input type="text" id="movieCategory" placeholder="🎭 Category">
+
+<input type="number" id="movieRating" placeholder="⭐ IMDb Rating">
+
+<input type="number" id="movieYear" placeholder="📅 Release Year">
+
+<input type="text" id="movieLanguage" placeholder="🌍 Language">
+
+<select id="movieQuality">
+<option>480P</option>
+<option>720P</option>
+<option>1080P</option>
+<option>4K</option>
+</select>
+
+<input type="text" id="movieDuration" placeholder="⏱️ Duration">
+
+<input type="url" id="watchLink" placeholder="▶ Watch Link">
+
+<input type="url" id="trailerLink" placeholder="🎥 Trailer Link">
+
+<input type="url" id="server1" placeholder="⬇ Download Server 1">
+
+<input type="url" id="server2" placeholder="⬇ Download Server 2">
+
+<input type="url" id="server3" placeholder="⬇ Download Server 3">
+
+<input type="file" id="thumbnail" accept="image/*">
+
+<select id="visibility">
+
+<option value="public">🌍 Public</option>
+
+<option value="private">🔒 Private</option>
+
+</select>
+
+<button id="publishMovie">
+
+🚀 Publish Movie
+
+</button>
+
+</div>
+
+</section>
+
+<h2 class="section-title">
+
+❤️ Favorites
+
+</h2>
+
+<div class="movie-grid">
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<p>
+
+© 2026 MJ Cinema Empire
+
+</p>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html><script type="module" src="firebase.js"></script>
